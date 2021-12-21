@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import Featured from "../components/Featured";
+import Footer from "../components/Footer";
 import Layout from "../components/Layout";
-import styles from "../styles/Home.module.css";
+import PizzaLists from "../components/PizzaLists";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
 
       <Layout />
       <Featured />
+      <PizzaLists />
+      <Footer />
     </div>
   );
 }

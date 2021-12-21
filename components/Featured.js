@@ -3,7 +3,7 @@ import { useState } from "react";
 const Featured = () => {
   const [index, setIndex] = useState(0);
   const images = [
-    "/img/featured.jpg",
+    "/img/featured.png",
     "/img/featured2.jpg",
     "/img/featured3.jpg",
   ];
@@ -24,7 +24,12 @@ const Featured = () => {
         style={{ left: 0 }}
         onClick={() => handleArrow("l")}
       >
-        <img src="/img/arrowl.png" alt="" layout="fill" objectFit="contain" />
+        <img
+          className="h-full w-full object-contain"
+          src="/img/arrowl.png"
+          alt=""
+          layout="fill"
+        />
       </div>
       <div
         className="w-[300vw] h-full flex transition duration-150 ease-in-out"
@@ -32,7 +37,7 @@ const Featured = () => {
       >
         {images.map((img, i) => (
           <div className="w-[100vw] h-full relative" key={i}>
-            <img src={img} alt="" className="h-full w-full object-fill" />
+            <img src={img} alt="" className="h-full w-full object-contain" />
           </div>
         ))}
       </div>
@@ -41,7 +46,12 @@ const Featured = () => {
         style={{ right: 0 }}
         onClick={() => handleArrow("r")}
       >
-        <img src="/img/arrowr.png" layout="fill" alt="" objectFit="contain" />
+        <img
+          className="h-full w-full object-contain"
+          src="/img/arrowr.png"
+          layout="fill"
+          alt=""
+        />
       </div>
     </div>
   );

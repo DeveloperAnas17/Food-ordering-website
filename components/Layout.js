@@ -1,11 +1,9 @@
-import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="z-50">
       <Navbar />
-      <Footer />
     </div>
   );
 };

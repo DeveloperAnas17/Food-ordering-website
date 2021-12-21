@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="h-20 py-0 px-10 flex  items-center justify-between bg-[#d1411e] sticky top-0 ">
+    <div className="h-[100px] py-0 px-10 flex  items-center justify-between bg-[#d1411e] sticky top-0 z-50">
       <div className="flex flex-1 items-center ">
         <div className="bg-white h-10 w-10 p-2 rounded-full">
           <img src="/img/telephone.png" width="32" height="32" alt="" />
